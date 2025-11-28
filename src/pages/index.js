@@ -28,7 +28,7 @@ export default function Home() {
   }, [])
 
   function searchPokemon() {
-    fetch(`https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/${name}`)
       .then((res) => res.json())
       .then((data) => {
         setData(data)
